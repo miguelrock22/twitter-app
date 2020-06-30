@@ -1,4 +1,4 @@
-posts/
+!posts/
 
-!posts/index.php
 posts/*
+!posts/index.php
