@@ -1,0 +1,105 @@
+/* ===== GENERAL ====== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1DA1F2;
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+}
+
+
+/* ===== LAYOUT ====== */
+
+.container {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+}
+
+.header-element {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+
+/* ===== FORM ====== */
+
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper .form {
+    width: 500px;
+    height: 500px;
+}
+
+.form-field__control label {
+    display: block;
+}
+
+.form-field__control input[type="text"],
+.form-field__control input[type="email"],
+.form-field__control input[type="date"],
+.form-field__control input[type="password"] {
+    padding: 5px 10px;
+    border: 1px solid #938f8f;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+.form-field__control input[type="submit"] {
+    padding: 5px 10px;
+    border: 1px solid #938f8f;
+    margin: 5px;
+    color: #FFF;
+    border-radius: 7px;
+    background: #1DA1F2;
+    transition: 0.3s;
+}
+
+.form-field__control .form-field__error {
+    color: red;
+    font-size: 12px;
+}
+
+.form-field__control input[type="submit"]:hover {
+    background: #78cafc;
+}
+
+.form-search {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(3, 250px)
+}
+
+
+/* ===== MESSAGES ====== */
+
+.messages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.messages .message {
+    width: 450px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.messages .message.message__success {
+    background-color: green;
+}
+
+.messages .message.message__error {
+    background-color: red;
+}
